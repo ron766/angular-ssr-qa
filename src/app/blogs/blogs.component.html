@@ -1,0 +1,12 @@
+<h1>My Blogs</h1>
+
+<div>
+  Time: {{ time }}
+</div>
+
+@for (item of blogs; track item.id) {
+<div>
+  <h2>{{ item.title }}</h2>
+  <p>{{ item.content }}</p>
+</div>
+}
